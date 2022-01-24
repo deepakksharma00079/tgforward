@@ -22,7 +22,7 @@ from telethon.sessions import StringSession
 from telethon.tl.types import InputMessagesFilterDocument, InputMessagesFilterMusic, InputMessagesFilterVideo, InputMessagesFilterPhotos
 from telethon.errors import FloodError
 
-API_ID = int(os.environ.get("API_ID"))
+API_ID = int(os.environ.get(API_ID))
 API_HASH = os.environ.get("API_HASH")
 STRING_SESSION = os.environ.get("STRING_SESSION")
 FROM_CHANNEL_ID = int(os.environ.get("FROM_CHANNEL_ID"))
