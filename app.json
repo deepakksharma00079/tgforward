@@ -1,0 +1,46 @@
+{
+      "name": "Channel Forward",
+      "description": "A script to forward large number of files to another telegram channel",
+      "logo": "https://telegra.ph/file/944a41db18eda321b075a.png",
+   "env": {
+      "API_ID": {
+         "description": "Get API_KEY from my.telegram.org, used for telethon based modules.",
+         "required": true,
+         "value": "2303792"
+      },
+      "API_HASH": {
+         "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
+         "required": true,
+         "value": "1e293b7a2f7a59c6b5819f7bfc29d340"
+      },
+      "TO_CHANNEL_ID": {
+         "description": "To which channel/group you want to forward files. Enter channel ID",
+         "required": true,
+         "value": "-1001620411172"
+      },
+      "STRING_SESSION": {
+         "description": "Get your telethon string session from here https://replit.com/@AnjanaMadu/GenerateStringSession",
+         "required": true,
+         "value": "1BVtsOMgBuxlTigT3xpFCtlqoZasCMX5ZrZ_CmN0aVnFFzBwYphguTM5fAA3-3fzvxtyE46r3gtvFohMrX1L5YJOE8eD-U8zngu91Ya_JtkrNZgCYVOu8WcyRiOwSkZL_Vm-X9b_-T5J2Zve9r5ga5VSLh7DBKWaOQ6J7PrOrbdrT7dmzAd5tiQY8J98BfDxdXBgp9zV92NLLAP2kmVCu70zbS9gU7eZv5yDKOGroVfskiWf3_ZAe2PBfpTaARmdFhacX_xOEgXeaeijLcncjav-uZIsUKa8cDUaUdIy8MjNvydm2J9ko3LKzcLxz1SG71rFUjSVxSj5ziH5CRHZ0ZPe1PeJ3_Yk="
+      },
+      "FILE_TYPE": {
+         "description": "Enter file type you want to forward. (Files types = docs, music, videos, photos.)",
+         "required": false,
+         "value": ""
+      },
+      "CUSTOM_CAPTION": {
+         "description": "If you want to add custom thumbnail. You should read ReadMe.",
+         "required": false,
+         "value": ""
+      },
+      "FROM_CHANNEL_ID": {
+         "description": "From which channel/group you want to forward files. Enter channel ID",
+         "required": true,
+         "value": "-1001751290097"
+      }
+   },
+   "buildpacks": [
+    {
+      "url": "heroku/python"
+  }]
+}
