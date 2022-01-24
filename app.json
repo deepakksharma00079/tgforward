@@ -6,7 +6,7 @@
       "API_ID": {
          "description": "Get API_KEY from my.telegram.org, used for telethon based modules.",
          "required": true,
-         "value": "2303792"
+         "value": "5130684380:AAGQG7J3VirUcx0vjPctS9LdkveLw3eURkU"
       },
       "API_HASH": {
          "description": "Get API_HASH from my.telegram.org, used for telethon based modules.",
