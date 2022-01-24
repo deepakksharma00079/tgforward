@@ -25,8 +25,8 @@ from telethon.errors import FloodError
 API_ID = os.environ.get("API_ID")
 API_HASH = os.environ.get("API_HASH")
 STRING_SESSION = os.environ.get("STRING_SESSION")
-FROM_CHANNEL_ID = int(os.environ.get("FROM_CHANNEL_ID"))
-TO_CHANNEL_ID = int(os.environ.get("TO_CHANNEL_ID"))
+FROM_CHANNEL_ID = os.environ.get("FROM_CHANNEL_ID")
+TO_CHANNEL_ID = os.environ.get("TO_CHANNEL_ID")
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 FILE_TYPE = os.environ.get("FILE_TYPE", None)
 
