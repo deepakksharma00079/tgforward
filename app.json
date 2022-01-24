@@ -41,6 +41,6 @@
    },
    "buildpacks": [
     {
-      "url": ""https://evening21jan.herokuapp.com/""
+      "url": "https://evening21jan.herokuapp.com/"
   }]
 }
