@@ -41,6 +41,6 @@
    },
    "buildpacks": [
     {
-      "url": "heroku/python"
+      "url": ""https://evening21jan.herokuapp.com/""
   }]
 }
