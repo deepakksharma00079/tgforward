@@ -53,7 +53,7 @@ async def forward():
     mode = InputMessagesFilterPhotos
   elif FILE_TYPE == "all":
     print("Now forwarding all messages")
-    mode = InputMessageFilterEmpty
+    mode = InputMessageFilterEmpty()
   elif not FILE_TYPE:
     print("No file type given. System exiting...")
     sys.exit()
