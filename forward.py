@@ -22,7 +22,7 @@ from telethon.sessions import StringSession
 from telethon.tl.types import InputMessagesFilterDocument, InputMessagesFilterMusic, InputMessagesFilterVideo, InputMessagesFilterPhotos
 from telethon.errors import FloodError
 
-from telethon.tl.types import InputMessagesFilterEmpty
+
 API_ID = int(os.environ.get("API_ID"))
 API_HASH = os.environ.get("API_HASH")
 STRING_SESSION = os.environ.get("STRING_SESSION")
@@ -54,7 +54,7 @@ async def forward():
     mode = InputMessagesFilterPhotos
   elif FILE_TYPE == "all":
     print("Now forwarding all messages")
-    mode = InputMessagesFilterEmpty
+    mode = None
   elif not FILE_TYPE:
     print("No file type given. System exiting...")
     sys.exit()
