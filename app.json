@@ -25,7 +25,7 @@
       },
       "FILE_TYPE": {
          "description": "Enter file type you want to forward. (Files types = docs, music, videos, photos.)",
-         "required": false,
+         "required": true,
          "value": ""
       },
       "CUSTOM_CAPTION": {
