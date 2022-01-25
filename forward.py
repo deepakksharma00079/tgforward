@@ -28,7 +28,7 @@ STRING_SESSION = os.environ.get("STRING_SESSION")
 FROM_CHANNEL_ID = int(os.environ.get("FROM_CHANNEL_ID"))
 TO_CHANNEL_ID = int(os.environ.get("TO_CHANNEL_ID"))
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
-FILE_TYPE = os.environ.get("FILE_TYPE")
+FILE_TYPE = os.environ.get("FILE_TYPE", None)
 
 bot = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
 bot.start()
