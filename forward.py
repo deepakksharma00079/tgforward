@@ -19,7 +19,7 @@ import sys
 import asyncio
 from telethon import TelegramClient
 from telethon.sessions import StringSession
-from telethon.tl.types import InputMessagesFilterDocument, InputMessagesFilterMusic, InputMessagesFilterVideo, InputMessagesFilterPhotos
+from telethon.tl.types import InputMessagesFilterDocument, InputMessagesFilterMusic, InputMessagesFilterVideo, InputMessageFilterEmpty, InputMessagesFilterPhotos
 from telethon.errors import FloodError
 
 API_ID = int(os.environ.get("API_ID"))
@@ -53,7 +53,7 @@ async def forward():
     mode = InputMessagesFilterPhotos
   elif FILE_TYPE == "all":
     print("Now forwarding all messages")
-    mode = None
+    mode = InputMessageFilterEmpty
   elif not FILE_TYPE:
     print("No file type given. System exiting...")
     sys.exit()
